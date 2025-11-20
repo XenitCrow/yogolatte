@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+
+@font-face {
+    font-family: 'tr_candiceregular';
+    src: url('./fonts/tr_candice-webfont.woff2') format('woff2'),
+         url('./fonts/tr_candice-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Indie Flower', cursive;
+  background-color: #BDEDB6;
+
+  
+}
+
+h1{
+  font-size: 4rem;
+}
+
+h2{
+  font-size: 3rem;
+}
+
+h3{
+  font-size: 2rem;
+}
+
+p, a, li{
+  font-size: 1.5rem;
+}
+
+.yogolatte-text{
+  font-family: "tr_candiceregular";
+  
+  font-weight: 900;
+  color: #fff;
+  -webkit-text-stroke: 1px #FFCDD9;
+}
+
+
+.hero{
+  background-image: url(images/vainilla.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  display: flex;
+  text-align: center;
+  min-height: 100vh;
+
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.hero h1, .hero h2, .hero a{
+  position: relative;
+  color: #FDFCC8;
+  z-index: 1;
+}
+
+main{
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem ;
+}
+
+.introduction, .objective, .mission, .vision, .contact, .mision, .proposal{
+  text-align: center;
+  margin: 5rem 2rem;
+}
+
+.flavors{
+  text-align: center;
+  
+}
+
+.flavors-list{
+  list-style: none;
+}
+
+.contact ul li{
+  color: black;
+
+}
+
+.flavors-list li{
+  padding: 5rem;
+  background-color: #FFCDD9;
+}
+
+.flavors-list li:first-child{
+  background-image: url(images/coco.jpg);
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.flavors-list li:nth-child(2){
+  background-image: url(images/fresa.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.flavors-list li:nth-child(3){
+  background-image: url(images/vainilla.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.proposal{
+  display: flex;
+  flex-direction: column;
+}
+
+.contact ul{
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.contact ul li a{
+  text-decoration: none;
+  color: rgb(255, 72, 72);
+}
+
+.contact ul li{
+  transition: all 0.3s ease-in-out;
+}
+
+.contact ul li:hover{
+  transform: scale(1.5);
+}
+
+footer{
+  background-color: #FFCDD9;
+  padding: 1rem;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  h1{
+    font-size: 3rem;
+  }
+  h2{
+    font-size: 2rem;
+  }
+  h3{
+    font-size: 1.5rem;
+  }
+  p, a, li{
+    font-size: 1rem;
+  }
+}
